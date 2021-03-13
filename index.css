@@ -52,6 +52,16 @@ table {
 /* Remove underlines on links */
 a {
     text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
 }
 
+/* add google font to h1 and p tags*/
+h1 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
  
