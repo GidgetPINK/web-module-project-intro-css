@@ -65,3 +65,7 @@ p {
     font-family: 'Roboto Mono', monospace;
 }
  
+/* Add background color to main-text */
+.main-text {
+    background-color: #DDB9A3;
+}
