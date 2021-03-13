@@ -48,7 +48,7 @@ table {
 }
 
 
-
+/* Main styles */
 body {
     text-align: center;
 }
@@ -81,19 +81,34 @@ p {
 /* Add background color to main-text */
 .main-text {
     background-color: #DDB9A3;
+    margin: 5rem 3.125rem;
+    padding: 3.125rem;
 }
 
 .header-section img {
     width: 20.25rem;
     border-radius: 50%;
+
 }
 
 .section1 img {
     width: 9rem;
+    margin-top: 4.5rem;
+}
+
+.section1 p {
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.section2 p {
+    width: 20rem;
+    margin: 0 auto;
 }
 
 .section2 img {
     width: 9rem;
+    margin-top: 4.5rem;
 }
 
 footer {
