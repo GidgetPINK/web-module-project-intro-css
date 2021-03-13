@@ -49,6 +49,19 @@ table {
 
 
 
+body {
+    text-align: center;
+}
+
+header nav {
+    margin-top: 2.25rem;
+    margin-bottom: 5.125rem;
+}
+
+nav a {
+    padding: 1rem;
+}
+
 /* Remove underlines on links */
 a {
     text-decoration: none;
@@ -70,6 +83,31 @@ p {
     background-color: #DDB9A3;
 }
 
+.header-section img {
+    width: 20.25rem;
+    border-radius: 50%;
+}
+
+.section1 img {
+    width: 9rem;
+}
+
+.section2 img {
+    width: 9rem;
+}
+
 footer {
     background-color: #F9E7DC;
+    margin-top: 6.75rem;
+    height: 25rem;
+}
+
+footer img {
+    width: 90rem;
+    height: 18.625rem;
+}
+
+footer nav {
+    margin-top: 2.75rem;
+    margin-bottom: 2.375rem;
 }
