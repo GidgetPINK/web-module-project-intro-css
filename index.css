@@ -54,10 +54,13 @@ table {
 body {
     text-align: center;
 }
+/* ===================
+    Header Navigation 
+=======================*/
 
 header nav {
-    margin-top: 2.25rem;
-    margin-bottom: 5.125rem;
+    margin-top: 2.25rem; 
+    margin-bottom: 10.25rem;
 }
 
 nav a {
@@ -66,37 +69,57 @@ nav a {
     margin: 0 6.25rem;
 }
 
-/* Remove underlines on links */
 a {
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     color: white;
 }
 
-/* add google font to h1 and p tags*/
+/*===================== 
+Header section styles
+=======================*/
 h1 {
     font-family: 'Chelsea Market', cursive;
-    width: 49.5rem;
-    font-size: 50px;
+    font-size: 40px;
+    width: 30%;
+    margin: 3.125rem 0 -6.25rem 47.813rem;
 }
 
-p {
-    font-family: 'Roboto Mono', monospace;
+.container{
+    display: flex;
+    justify-content: center;
 }
- 
-/* Add background color to main-text */
-.main-text {
-    background-color: #DDB9A3;
-    margin: 5rem 3.125rem;
-    padding: 3.125rem;
+
+.header-section p{
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5em;
+    width: 30%;
+    align-self: center;
+    margin: 0 0 0 80px;
 }
 
 .header-section img {
-    width: 20.25rem;
+    width: 20%;
     border-radius: 50%;
-    margin-right: 62.125rem;
+    /*margin-right: 62.125rem;*/
+}
+ 
+/* =======================
+    Main paragraph styles
+===========================*/
+.main-text {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5em;
+    color: white;
+    background-color: #DDB9A3;
+    margin: 80px auto;
+    padding: 3.125rem;
+    width: 50%;
 }
 
+p{
+    font-family: 'Roboto Mono', monospace;
+}
 
 .section1 img {
     width: 9rem;
@@ -125,8 +148,9 @@ footer {
 }
 
 footer img {
-    width: 90rem;
+    width: 100%;
     height: 18.625rem;
+    background-position-y: top;
 }
 
 footer nav {
