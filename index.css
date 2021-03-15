@@ -70,6 +70,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: black;
+}
+
 /* ==========================
     Header Section Styles
 ============================= */
@@ -78,7 +82,6 @@ h1 {
     font-family: 'Chelsea Market', cursive;
     align-self: center;
     margin: -150px 10% 0 40%;
-    background-color: yellow;
 }
 
 .header-section p {
@@ -101,10 +104,6 @@ h1 {
     border-radius: 100%;
     margin: 5% 0 0 20%;
 }
-
-
-
-
 
 /* ==================================
     Main body styling
@@ -134,23 +133,18 @@ h1 {
     margin-top: 4.5rem;
 }
 
-
-
-
-
-
-
-
-
+/*==============================
+    Footer Styles
+================================*/
 footer {
     background-color: #F9E7DC;
     margin-top: 6.75rem;
-    height: 25rem;
+    height: 12rem;
 }
 
 footer img {
     width: 100%;
-    height: 18.625rem;
+    height: 12rem;
 }
 
 footer nav {
@@ -162,13 +156,13 @@ footer nav {
     Media Queries
 ===============================*/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     body{
         background-color: lightblue;
     }
 
     h1 {
-        margin: 0 auto;
+        margin: 1rem auto;
         font-size: 40px;
     }
 
@@ -178,7 +172,6 @@ footer nav {
     }
 
     header nav {
-        background-color: purple;
         flex-direction: column;
     }
 
@@ -192,14 +185,82 @@ footer nav {
     }
 
     .header-section p {
-        margin: 50px auto;
+        margin: 3.125rem auto;
         width: 100%;
     }
 
-    footer img {
-       height: 25rem;
+    .main-text {
+        margin-top: -5rem;
     }
 
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: grey;
+    }
+    .nav-container {
+        display: flex;
+        margin: 0 0 50px 0;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    .nav-container a {
+        margin: 10px;
+    }
+
+    .container img {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 4% auto;
+    }
+
+    .header-section p {
+        margin: 4% auto;
+        width: 100%;
+    }
+
+    .main-text {
+        margin-top: -5rem;
+    }
+
+    footer nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: purple;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    .nav-container a {
+        margin: 20px 10px;
+    }
+
+    .header-section p {
+        margin: 4% auto;
+        width: 50%;
+    }
 }
 
 
