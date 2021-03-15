@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -57,89 +57,90 @@ body {
 /* ===================
     Header Navigation 
 =======================*/
-
 header nav {
-    margin-top: 2.25rem; 
-    margin-bottom: 10.25rem;
-}
-
-nav a {
-    padding: 1rem;
-    border-radius: 10px;
-    margin: 0 6.25rem;
+    margin: 2.25rem 0; 
 }
 
 a {
-    text-decoration: none;
     font-family: 'Roboto Mono', monospace;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 4.25rem;
+    text-decoration: none;
     color: white;
 }
 
-/*===================== 
-Header section styles
-=======================*/
+/* ==========================
+    Header Section Styles
+============================= */
 h1 {
+    font-size: 2.5em;
     font-family: 'Chelsea Market', cursive;
-    font-size: 40px;
+    align-self: center;
+    margin: -150px 10% 0 40%;
+    background-color: yellow;
+}
+
+.header-section p {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.5em;
     width: 30%;
-    margin: 3.125rem 0 -6.25rem 47.813rem;
+    margin-left: 50%;
 }
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin: 2.25rem 0 10.25rem 0;
 }
 
-.header-section p{
-    font-family: 'Roboto Mono', monospace;
-    line-height: 1.5em;
-    width: 30%;
-    align-self: center;
-    margin: 0 0 0 80px;
+.container img{
+    align-self: flex-start;
+    max-width: 15%;
+    height: auto;
+    border-radius: 100%;
+    margin: 5% 0 0 20%;
 }
 
-.header-section img {
-    width: 20%;
-    border-radius: 50%;
-    /*margin-right: 62.125rem;*/
-}
- 
-/* =======================
-    Main paragraph styles
-===========================*/
+
+
+
+
+/* ==================================
+    Main body styling
+=====================================*/
 .main-text {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.5em;
     color: white;
     background-color: #DDB9A3;
-    margin: 80px auto;
-    padding: 3.125rem;
-    width: 50%;
-}
-
-p{
-    font-family: 'Roboto Mono', monospace;
+    margin: 0 5% 0 5%;
+    padding: 2rem;
 }
 
 .section1 img {
     width: 9rem;
-    margin-top: 4.5rem;
+    margin: 4.5rem 0 0.625rem 0;
 }
-
-.section1 p {
-    width: 20rem;
-    margin: 0 auto;
-}
-
+.section1,
 .section2 p {
     width: 20rem;
-    margin: 0 auto;
+    margin: 0.625rem auto;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .section2 img {
     width: 9rem;
     margin-top: 4.5rem;
 }
+
+
+
+
+
+
+
+
 
 footer {
     background-color: #F9E7DC;
@@ -150,10 +151,59 @@ footer {
 footer img {
     width: 100%;
     height: 18.625rem;
-    background-position-y: top;
 }
 
 footer nav {
     margin-top: 2.75rem;
     margin-bottom: 2.375rem;
 }
+
+/*=============================
+    Media Queries
+===============================*/
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: lightblue;
+    }
+
+    h1 {
+        margin: 0 auto;
+        font-size: 40px;
+    }
+
+    .nav-container {
+        display: flex;
+        margin: 0 0 50px 0;
+    }
+
+    header nav {
+        background-color: purple;
+        flex-direction: column;
+    }
+
+    .nav-container a {
+        margin: 10px;
+    }
+
+    .header-section img,
+    footer nav {
+        display: none;
+    }
+
+    .header-section p {
+        margin: 50px auto;
+        width: 100%;
+    }
+
+    footer img {
+       height: 25rem;
+    }
+
+}
+
+
+
+
+
+
