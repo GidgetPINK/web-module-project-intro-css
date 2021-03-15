@@ -49,23 +49,22 @@ table {
 
 
 /* Main styles */
-
-
 body {
     text-align: center;
 }
+
 /* ===================
     Header Navigation 
 =======================*/
 header nav {
-    margin: 2.25rem 0; 
+    margin: 2.25rem 0;
 }
 
 a {
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
     border-radius: 10px;
-    margin: 0 4.25rem;
+    margin: 0 4.75rem;
     text-decoration: none;
     color: white;
 }
@@ -138,19 +137,20 @@ h1 {
 ================================*/
 footer {
     background-color: #F9E7DC;
-    margin-top: 6.75rem;
+    margin: 6.75rem 0 6.75rem 0;
     height: 12rem;
 }
 
 footer img {
     width: 100%;
     height: 12rem;
+    margin-bottom: 50px;
 }
 
-footer nav {
+/*footer nav a{
     margin-top: 2.75rem;
     margin-bottom: 2.375rem;
-}
+}*/
 
 /*=============================
     Media Queries
@@ -177,6 +177,7 @@ footer nav {
 
     .nav-container a {
         margin: 10px;
+        width: 91%
     }
 
     .header-section img,
@@ -191,6 +192,10 @@ footer nav {
 
     .main-text {
         margin-top: -5rem;
+    }
+
+    footer {
+        margin: 6.75rem 0 0 0;
     }
 
 }
@@ -210,6 +215,7 @@ footer nav {
 
     .nav-container a {
         margin: 10px;
+        width: 93%
     }
 
     .container img {
@@ -237,6 +243,10 @@ footer nav {
     footer nav {
         display: none;
     }
+
+    footer {
+        margin: 6.75rem 0 0 0;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -261,6 +271,81 @@ footer nav {
         margin: 4% auto;
         width: 50%;
     }
+
+    footer {
+        margin: 6.75rem 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: teal;
+    }
+
+    .header-section p {
+        margin: 4% auto;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .nav-container a {
+        margin: 30px 20px;
+        width: 115px
+    }
+
+    footer {
+        margin: 6.75rem 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: blue;
+    }
+    
+    .nav-container a {
+        margin: 1.75rem 4.75rem;
+        width: 115px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2.25rem 0 10.25rem 0;
+    }
+
+    .container img {
+        max-width: 15%;
+        align-self: flex-start;
+        height: auto;
+        margin: 5% 0 0 20%;
+    }
+
+    .header-section p {
+        width: 40%;
+        margin-left: 45%;
+        font-size: 18px;
+    }
+
+    h1 {
+        align-self: center;
+        margin: -150px 10% 0 40%;
+    }
+
+    footer {
+        margin: 6.75rem 0 6.75rem 0;
+    }
+
+    footer nav {
+        display: contents;
+    }
+
+    
+
+    
+
+    
+
 }
 
 
