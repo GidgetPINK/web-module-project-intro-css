@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+* {
+    max-width: 1600px;
+}
 
 /* Main styles */
 body {
@@ -157,9 +160,6 @@ footer img {
 ===============================*/
 
 @media only screen and (max-width: 600px) {
-    body{
-        background-color: lightblue;
-    }
 
     h1 {
         margin: 1rem auto;
@@ -187,7 +187,7 @@ footer img {
 
     .header-section p {
         margin: 3.125rem auto;
-        width: 100%;
+        width: 90%;
     }
 
     .main-text {
@@ -201,9 +201,6 @@ footer img {
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: grey;
-    }
     .nav-container {
         display: flex;
         margin: 0 0 50px 0;
@@ -233,7 +230,7 @@ footer img {
 
     .header-section p {
         margin: 4% auto;
-        width: 100%;
+        width: 90%;
     }
 
     .main-text {
@@ -250,9 +247,6 @@ footer img {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: purple;
-    }
 
     .nav-container {
         display: flex;
@@ -278,9 +272,6 @@ footer img {
 }
 
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: teal;
-    }
 
     .header-section p {
         margin: 4% auto;
@@ -299,9 +290,6 @@ footer img {
 }
 
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: blue;
-    }
     
     .nav-container a {
         margin: 1.75rem 4.75rem;
@@ -339,13 +327,6 @@ footer img {
     footer nav {
         display: contents;
     }
-
-    
-
-    
-
-    
-
 }
 
 
