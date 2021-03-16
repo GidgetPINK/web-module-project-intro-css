@@ -47,9 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    max-width: 1600px;
-}
+
 
 /* Main styles */
 body {
@@ -63,16 +61,17 @@ header nav {
     margin: 2.25rem 0;
 }
 
-a {
+button {
     font-family: 'Roboto Mono', monospace;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     margin: 0 4.75rem;
     text-decoration: none;
     color: white;
+    border: none;
 }
 
-a:hover {
+button:hover {
     color: black;
 }
 
@@ -83,7 +82,7 @@ h1 {
     font-size: 2.5em;
     font-family: 'Chelsea Market', cursive;
     align-self: center;
-    margin: -150px 10% 0 40%;
+    margin: -937.5% 10% 0 40%;
 }
 
 .header-section p {
@@ -101,7 +100,7 @@ h1 {
 
 .container img{
     align-self: flex-start;
-    max-width: 15%;
+    width: 15%;
     height: auto;
     border-radius: 100%;
     margin: 5% 0 0 20%;
@@ -141,16 +140,17 @@ h1 {
 footer {
     background-color: #F9E7DC;
     margin: 6.75rem 0 6.75rem 0;
-    height: 12rem;
+    height: auto;
+    padding: 0 0 1.125em 0;
 }
 
 footer img {
     width: 100%;
     height: 12rem;
-    margin-bottom: 50px;
+    margin-bottom: 1.125em;
 }
 
-/*footer nav a{
+/*footer nav button{
     margin-top: 2.75rem;
     margin-bottom: 2.375rem;
 }*/
@@ -163,21 +163,21 @@ footer img {
 
     h1 {
         margin: 1rem auto;
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     .nav-container {
         display: flex;
-        margin: 0 0 50px 0;
+        margin: 0 0 3.125em 0;
     }
 
     header nav {
         flex-direction: column;
     }
 
-    .nav-container a {
+    .nav-container button {
         margin: 10px;
-        width: 91%
+        width: 95%
     }
 
     .header-section img,
@@ -210,9 +210,9 @@ footer img {
         flex-direction: column;
     }
 
-    .nav-container a {
+    .nav-container button {
         margin: 10px;
-        width: 93%
+        width: 90%
     }
 
     .container img {
@@ -257,7 +257,7 @@ footer img {
         flex-direction: row;
     }
 
-    .nav-container a {
+    .nav-container button {
         margin: 20px 10px;
     }
 
@@ -279,9 +279,10 @@ footer img {
         font-size: 20px;
     }
 
-    .nav-container a {
+    .nav-container button {
         margin: 30px 20px;
         width: 115px
+        padding: 5px;
     }
 
     footer {
@@ -291,9 +292,10 @@ footer img {
 
 @media only screen and (min-width: 1200px) {
     
-    .nav-container a {
+    .nav-container button {
         margin: 1.75rem 4.75rem;
         width: 115px;
+        padding: 10px;
     }
 
     .container {
@@ -318,10 +320,6 @@ footer img {
     h1 {
         align-self: center;
         margin: -150px 10% 0 40%;
-    }
-
-    footer {
-        margin: 6.75rem 0 6.75rem 0;
     }
 
     footer nav {
